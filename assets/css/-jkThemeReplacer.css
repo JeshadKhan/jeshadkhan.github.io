@@ -1,0 +1,93 @@
+/*
+	Document	: JK Theme Replacer
+	Type		: Cascading Style Sheet (CSS)
+	Author		: Jeshad Khan
+	Website		: http://jeshadkhan.com
+	Description	: © 2012 - 2015 Jeshad Khan.
+*/
+
+
+
+@charset"UTF-8";
+
+/*  Default Blue Color:-
+    Normal: #2196F3
+    Dark:   #177EE5
+*/
+
+.body-index
+{
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.rope
+{
+    background-color: #177EE5; /*dark*/
+}
+
+.title-site
+{
+    border: 5px solid #177EE5; /*dark*/
+    background-color: #2196F3; /*normal*/
+}
+
+footer.w3-theme p
+{
+    color: #fff !important;
+}
+
+#nav-fm li a,#nav-fm2 li a
+{
+	color:#2196F3;
+	background: #fff;
+}
+
+/*normal color use here*/
+.block-menu
+{
+	background: #2196F3;
+}
+
+.front, .back
+{
+	background: #2196F3;
+	color: #fff;
+}
+
+.btn-con, .btn-con:active, .btn-con:focus
+{
+    color: #2196F3;
+    border: 3px solid #2196F3;
+}
+
+.btn-con:hover
+{
+    color: #fff;
+    background-color: #2196F3;
+}
+
+.to-top
+{
+	border: 2px solid #2196F3;
+}
+
+.to-top :hover
+{
+	color: #2196F3;
+}
+
+/*dark color use here*/
+.gallery-div:hover
+{
+    background-color: #177EE5 !important;
+}
+
+.address-circle i
+{
+    color: #fff;
+    background-color: #177EE5;
+}
+
+
+/* The End */

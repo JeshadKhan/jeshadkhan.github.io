@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Bio || Jeshad Khan</title>
+
+    <!-- Title Icon -->
+    <link type="image/png" rel="icon" href="assets/img/favicon.png" />
+
+    <!-- Cascading Style Sheet (CSS) -->
+    <link type="text/css" rel="Stylesheet" href="assets/css/AppStylePack-CSS-Importer.css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <!-- preloader -->
+    <script type="text/javascript" src="assets/js/preloader.js"></script>
+
+    <!-- header -->
+    <header>
+        <!-- site title -->
+        <h1 class="text-center">
+            <img src="assets/img/logo.png" class="align-center img-logo"/>
+            <span id="header-title">Jeshad Khan</span>
+        </h1>
+
+        <!-- navigation -->
+        <div class="text-center">
+            <ul class="block-menu">
+                <li><a href="home.html" class="three-d">Home
+		            <span aria-hidden="true" class="three-d-box">
+                        <span class="front">Home</span>
+                        <span class="back">Home</span>
+                    </span>
+                </a></li>
+                <li><a href="about.html" class="three-d">Bio
+		            <span aria-hidden="true" class="three-d-box">
+                        <span class="front">Bio</span>
+                        <span class="back">Bio</span>
+                    </span>
+                </a></li>
+                <li><a href="experience_timeline.html" class="three-d">Experience
+		            <span aria-hidden="true" class="three-d-box">
+                        <span class="front">Experience</span>
+                        <span class="back">Experience</span>
+                    </span>
+                </a></li>
+                <li><a href="project.html" class="three-d">Projects
+		            <span aria-hidden="true" class="three-d-box">
+                        <span class="front">Projects</span>
+                        <span class="back">Projects</span>
+                    </span>
+                </a></li>
+                <li><a href="skill.html" class="three-d">Skills
+		            <span aria-hidden="true" class="three-d-box">
+                        <span class="front">Skills</span>
+                        <span class="back">Skills</span>
+                    </span>
+                </a></li>
+                <li><a href="cv.html" class="three-d">CV
+		            <span aria-hidden="true" class="three-d-box">
+                        <span class="front">CV</span>
+                        <span class="back">CV</span>
+                    </span>
+                </a></li>
+                <li><a href="contact.html" class="three-d">Contact
+		            <span aria-hidden="true" class="three-d-box">
+                        <span class="front">Contact</span>
+                        <span class="back">Contact</span>
+                    </span>
+                </a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- main body -->
+    <section class="animated zoomIn">
+        <!-- about me -->
+        <div class="row no-margin padding-top-10px padding-bottom-30px shape-bottom">
+            <div class="container-fluid block-title">
+                <h2 class="text-uppercase text-center theme-text">Bio</h2>
+                <div class="title-icon"><i class="fa fa-user"></i></div>
+                <p class="container-fluid text-justify margin-top-15px">
+                    (As-salamu alaykum) Peace be upon you. Good <span id="timePeriodSay">to see you</span>. 
+                    Hello, I'm Md. Naim Hasan Khan Jeshad. Surname: Jeshad. 
+                    I express myself as a Tech Enthusiast, Entrepreneur, Technopreneur, Engineer, IT Guy. 
+                    I like creative works and build ideas. 
+                    Also like to meet new peoples to make relationship, reading literature, enjoying music, travelling & specially leadership. 
+                    I'm a visioneer for the technology revolution. 
+                    <span id="timePeriodNight"></span>
+                </p>
+                <p class="container-fluid text-center margin-top-15px">
+                    <h4><i class="fa fa-quote-left margin-right-5px"></i>Philosophy is the art of living.<i class="fa fa-quote-right margin-left-5px"></i></h4>
+                    - <a href="https://en.wikipedia.org/wiki/Plutarch" target="_blank">Plutarch</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- end main body -->
+
+    <!-- footer -->
+    <footer class="w3-container w3-theme navbar-fixed-bottom">
+        <p class="padding-top-10px text-center">&copy; <span id="current_year">2015</span> <a class="footer-link" href="http://jeshadkhan.com">Jeshad Khan</a>. All Rights Reserved.</p>
+    </footer>
+    <!-- end footer -->
+
+    <!-- Go Back To Top Button -->
+    <a class="to-top"><span class="fa fa-2x fa-arrow-up padding-all-10px animated bounceInUp"></span></a>
+    <!-- JavaScript (JS) -->
+    <script type="text/javascript" src="assets/js/AppStylePack-JS-Importer.js"></script>
+    <script type="text/javascript">
+        var timePeriodSay = document.getElementById("timePeriodSay");
+        var dateTime = new Date();
+        var hours = dateTime.getHours();
+
+        if (hours >= 5 && hours < 12) {
+            timePeriodSay.innerHTML = "morning";
+        }
+        else if (hours >= 12 && hours < 16) {
+            timePeriodSay.innerHTML = "noon";
+        }
+        else if (hours >= 16 && hours < 18) {
+            timePeriodSay.innerHTML = "afternoon";
+        }
+        else if (hours >= 18 && hours < 20) {
+            timePeriodSay.innerHTML = "evening";
+        }
+        else {
+            timePeriodSay.innerHTML = "to see you";
+            document.getElementById("timePeriodNight").innerHTML = " Good night.";
+        }
+    </script>
+</body>
+</html>

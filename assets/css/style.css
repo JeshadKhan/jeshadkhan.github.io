@@ -1,0 +1,321 @@
+/*
+	Document	: Custom Style
+	Type		: Cascading Style Sheet (CSS)
+	Author		: Jeshad Khan
+	Website		: http://jeshadkhan.com
+	Description	: © 2012 - 2015 Jeshad Khan.
+*/
+
+
+
+@charset"UTF-8";
+
+/* background */
+
+.body-index
+{
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.bg-color-instagram
+{
+    background-color: #e4405f;
+}
+
+
+/* title */
+
+.rope
+{
+    width: 5px;
+    height: 70px;
+    background-color: #177EE5;
+    margin: 0 auto;
+}
+
+.title-area
+{
+    margin-left: 24%;
+}
+
+.title-site
+{
+    margin-top: -30px;
+    border: 5px solid #177EE5;
+    padding: 20px;
+    font-size: 3em;
+    background-color: #2196F3;
+}
+
+
+/* modal message */
+
+.modalMsg
+{
+    z-index:10001 !important;
+    margin-top: -280px !important;
+}
+
+.modalMsgBody
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/* animation */
+
+.animatedHover:hover
+{
+    animation-play-state: running;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+
+/* message */
+
+.msg
+{
+    margin-top: -25px;
+}
+
+
+/* section title footer */
+
+.shape-bottom {
+    position: relative;
+    z-index: 2;
+}
+
+.block-title {
+    /*padding: 40px 0px;*/
+    padding-bottom: 20px;
+    z-index: 3;
+    position: relative;
+    text-align: center;
+    border-top: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.block-title .title-icon {
+    display: inline-block;
+    position: relative;
+}
+
+.block-title .title-icon::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: #323232 none repeat scroll 0% 0%;
+    width: 20px;
+    left: -30px;
+    top: 50%;
+}
+
+.block-title .title-icon::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: #323232 none repeat scroll 0% 0%;
+    width: 20px;
+    right: -30px;
+    top: 50%;
+}
+
+
+/* content */
+
+.content-div
+{
+    margin-top: 20px;
+    margin-bottom: 55px;
+}
+
+
+/* home */
+
+.home-section-left
+{
+    border-right: 1px solid #ddd;
+}
+
+.home-section-right
+{
+    padding: 50px 30px;
+    text-align: center;
+}
+
+
+/* blog */
+
+.post-date
+{
+    font-size: 14px;
+    padding-bottom: 15px;
+    display: block;
+    line-height: 1;
+    color: #006A4E;
+}
+
+.post-date i
+{
+    color: #D01820;
+}
+
+.max-blog-post-img-size
+{
+    max-width: 300px !important;
+    max-height: 300px !important;
+}
+
+.btn-con, .btn-con:active, .btn-con:focus
+{
+    padding: 10px;
+    color: #2196F3;
+    text-decoration: none;
+    border: 3px solid #2196F3;
+}
+
+.btn-con:hover
+{
+    color: #fff;
+    text-decoration: none;
+    background-color: #2196F3;
+}
+
+.text-blog-post-single
+{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+
+/* gallery */
+
+.gallery-div, .gallery-div:active, .gallery-div:focus
+{
+    color: #fff;
+    background-color: #2196F3;
+    padding: 40px !important;
+    text-align: center;
+    text-decoration: none;
+}
+
+.gallery-div span
+{
+    font-size: 2em;
+}
+
+.gallery-div:hover
+{
+    text-decoration: none;
+    /*color: #424242;*/
+    background-color: #177EE5 !important;
+}
+
+.gallery-content-div
+{
+    margin-top: 30px;
+    margin-bottom: 55px;
+}
+
+.gallery-content-title
+{
+    padding-top: 10px;
+}
+
+
+/* contact */
+
+.forms-field input, .forms-field textarea
+{
+    width: 100%;
+}
+
+.address-area
+{
+    margin-bottom: 55px !important;
+}
+
+.address-div
+{
+    width: 98%;
+    padding: 20px;
+}
+
+.address-circle i
+{
+    color: #fff;
+    background-color: #177EE5;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    padding: 6px;
+    margin-right: 5px;
+}
+
+.address-circle a:hover, .address-circle a:active, .address-circle a:focus
+{
+    text-decoration: none !important;
+    font-weight: bold;
+    color: #fff;
+}
+
+.address-square
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.address-square a
+{
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px;
+    margin: 5px;
+}
+
+.map-area
+{
+    margin-bottom: 20px !important;
+}
+
+
+/* footer */
+
+.footer-link:hover
+{
+    color: #23527c;
+    text-decoration: none;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 992px)
+{
+    .gallery-res
+    {
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    .res-center
+    {
+        text-align: center;
+    }
+
+    .res-blog-post-text
+    {
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+}
+
+
+/* The End */
