@@ -294,6 +294,10 @@
     text-decoration: none;
 }
 
+.to-top {
+    right: .1em;
+}
+
 
 /* responsive */
 

@@ -16,6 +16,7 @@
 
     <!-- Cascading Style Sheet (CSS) -->
     <link type="text/css" rel="Stylesheet" href="assets/css/AppStylePack-CSS-Importer.css" />
+    <link type="text/css" rel="Stylesheet" href="assets/css/turn.css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -93,11 +94,100 @@
             <div class="container-fluid block-title">
                 <h2 class="text-uppercase text-center theme-text">Curriculum Vitae</h2>
                 <div class="title-icon"><i class="fa fa-book"></i></div>
-                <p class="container-fluid text-center margin-top-15px">
-                    Coming Soon...
+                <p class="text-center padding-top-15px">
+                    <a class="btn btn-info" target="_blank" href="assets/cv/CV_of_MdNaimHasanKhanJeshad.pdf" download="CV of Md. Naim Hasan Khan Jeshad - jeshadkhan.com">
+                        <i class="fa fa-download"></i> Download
+                    </a>
                 </p>
             </div>
         </div>
+
+        <!-- TurnJS -->
+        <div class="container">
+            <div class="row padding-top-10px padding-bottom-40px">
+                <div class="col-md-12 catalog-app">
+                    <div id="viewer" style="padding-left: 50px; padding-right: 50px;">
+                        <div id="flipbook" class="ui-flipbook">
+                            
+                            <div><img class="img-responsive" width="100%" height="auto" src="assets/cv/CV_of_MdNaimHasanKhanJeshad_Page1.jpg"/></div> 
+                            <div><img class="img-responsive" width="100%" height="auto" src="assets/cv/CV_of_MdNaimHasanKhanJeshad_Page2.jpg"/></div> 
+                            <div><img class="img-responsive" width="100%" height="auto" src="assets/cv/CV_of_MdNaimHasanKhanJeshad_Page3.jpg"/></div> 
+                            <div><img class="img-responsive" width="100%" height="auto" src="assets/cv/CV_of_MdNaimHasanKhanJeshad_Page4.jpg"/></div> 
+                            <div><img class="img-responsive" width="100%" height="auto" src="assets/cv/CV_of_MdNaimHasanKhanJeshad_Page5.jpg"/></div> 
+
+                            <a ignore="1" class="ui-arrow-control ui-arrow-next-page"></a>
+                            <a ignore="1" class="ui-arrow-control ui-arrow-previous-page"></a>
+                        </div>
+                    </div>
+                
+                
+                    <!-- controls -->
+                    <div id="flipbook-controls" class="extend-ui-controls">
+                        <div class="all">
+                            <div class="ui-slider" id="page-slider">
+                                <div class="bar">
+                                    <div class="progress-width">
+                                        <div class="progress">
+                                            <div class="handler"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="ui-options" id="options">
+                                <a class="ui-icon" id="ui-icon-table-contents">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                                <a class="ui-icon show-hint" title="Miniatures" id="ui-icon-miniature">
+                                    <i class="fa fa-th"></i>
+                                </a>
+                                <!-- <a class="ui-icon" id="ui-icon-zoom">
+                                    <i class="fa fa-file-o"></i>
+                                </a> -->
+                                <a class="ui-icon show-hint" title="Share" id="ui-icon-share">
+                                    <i class="fa fa-share"></i>
+                                </a>
+                                <!-- <a class="ui-icon show-hint" title="Full Screen" id="ui-icon-full-screen">
+                                    <i class="fa fa-expand"></i>
+                                </a> -->
+                                <a class="ui-icon show-hint" id="ui-icon-toggle">
+                                    <i class="fa fa-ellipsis-h"></i>
+                                </a>
+                            </div>
+                    
+                            <!-- zoom slider -->
+                            <div id="zoom-slider-view" class="zoom-slider">
+                                <div class="bg">
+                                    <div class="ui-slider" id="zoom-slider">
+                                        <div class="bar">
+                                            <div class="progress-width">
+                                                <div class="progress">
+                                                    <div class="handler"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / zoom slider -->
+                        </div>
+                        
+                        <div id="ui-icon-expand-options">
+                            <a class="ui-icon show-hint">
+                                <i class="fa fa-ellipsis-h"></i>
+                            </a>
+                        </div>
+                
+                    </div>
+                    <!-- / controls -->
+                
+                    <!-- miniatures -->
+                    <div id="miniatures" class="ui-miniatures-slider"></div>
+                    <!-- / miniatures -->
+                </div>
+            </div>
+        </div>
+
     </section>
     <!-- end main body -->
 
@@ -111,5 +201,33 @@
     <a class="to-top"><span class="fa fa-2x fa-arrow-up padding-all-10px animated bounceInUp"></span></a>
     <!-- JavaScript (JS) -->
     <script type="text/javascript" src="assets/js/AppStylePack-JS-Importer.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/js/underscore-min.js"></script>
+    <script type="text/javascript" src="assets/js/backbone-min.js"></script>
+    <script type="text/javascript" src="assets/js/turn.min.js"></script>
+    <script type="text/javascript" src="assets/js/turn.zoom.min.js"></script>
+    <script type="text/javascript" src="assets/js/turn.custom.js"></script>
+    <script type="text/javascript">
+        // Change these settings
+        FlipbookSettings = {
+          options: {
+            width: 1280,
+            height: 828
+          },
+          shareMessage: 'CV of Md. Naim Hasan Khan Jeshad - jeshadkhan.com',
+          table: [
+            {text: 'Cover', page: 1},
+            {text: 'Introduction', page: 2},
+            {text: 'Experience', page: 3},
+            {text: 'Reference', page: 5},
+          ],
+          pageFolder: 'assets/cv',
+          pageFolderFilePrefix: 'CV_of_MdNaimHasanKhanJeshad_Page'
+        };
+      
+        $(window).load(function(event) {
+          $("#flipbook .page-1").addClass('animation-on');
+        });
+    </script>
 </body>
 </html>
