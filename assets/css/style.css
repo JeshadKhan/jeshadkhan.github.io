@@ -44,7 +44,7 @@
     margin-top: -30px;
     border: 5px solid #177EE5;
     padding: 20px;
-    font-size: 3em;
+    font-size: 2rem;
     background-color: #2196F3;
 }
 
@@ -145,6 +145,57 @@
 {
     padding: 50px 30px;
     text-align: center;
+}
+
+
+/* project */
+.project-block-section {
+    margin-bottom: 50px;
+}
+
+.project-block {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.project-block .project-content div {
+    width: 100%;
+    margin: 2px 0;
+    display: inline-block;
+    position: relative;
+}
+
+.project-block .project-content > div:before {
+    display: table;
+    content: " ";
+}
+
+.project-block .project-content > div:first-child {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.project-block .project-content hr {
+    width: 100%;
+    margin: 3px 0;
+    display: inline-block;
+}
+
+.project-block .project-content div .left {
+    float: left;
+    position: relative;
+    width: 33%;
+}
+
+.project-block .project-content div .right {
+    float: left;
+    position: relative;
+    width: 66%;
+}
+
+.project-block .project-content div .left i,
+.project-block .project-content div .right i {
+    padding-right: 5px;
 }
 
 
