@@ -198,6 +198,16 @@
     padding-right: 5px;
 }
 
+.project-block .project-content div .left a,
+.project-block .project-content div .right a {
+    text-decoration: underline;
+}
+
+.project-block .project-slider .carousel .carousel-inner .item img {
+    max-height: 22rem;
+    margin: 0 auto;
+}
+
 
 /* blog */
 

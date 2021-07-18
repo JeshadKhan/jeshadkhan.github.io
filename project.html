@@ -12,6 +12,7 @@
 
     <!-- Cascading Style Sheet (CSS) -->
     <link type="text/css" rel="Stylesheet" href="assets/css/AppStylePack-CSS-Importer.css" />
+    <link type="text/css" rel="Stylesheet" href="assets/css/portfolio.filter.css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -89,11 +90,1434 @@
             <div class="container-fluid block-title">
                 <h2 class="text-uppercase text-center theme-text">Projects</h2>
                 <div class="title-icon"><i class="fa fa-connectdevelop"></i></div>
-                <p class="container-fluid text-center margin-top-15px">
-                    Coming Soon...
-                </p>
             </div>
         </div>
+
+        <!-- project block -->
+        <div class="container project-block-section">
+            
+            <div class="row">
+                <div id="portfolioFilterBtnContainer" class="col-xs-12 portfolio-filter-btn-container">
+                    <button class="btn btn-default active" onclick="portfolioFilterSelection('all')">All</button>
+                    <button class="btn btn-default" onclick="portfolioFilterSelection('dev_single')">Single Player</button>
+                    <button class="btn btn-default" onclick="portfolioFilterSelection('dev_team')">Team Player</button>
+                    <button class="btn btn-default" onclick="portfolioFilterSelection('dev_company')">Develop for Company</button>
+                    <button class="btn btn-default" onclick="portfolioFilterSelection('training')">Training</button>
+                </div>
+            </div>
+            
+            <!-- <div data-sort="0" class="row w3-container w3-theme project-block portfolio-filter-item all">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">__Project</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">__Role</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">__Author</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">__Category</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">__Year</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right">__Link</div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">__Description</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel001" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel001" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel001" data-slide-to="1"></li>
+                            <li data-target="#carousel001" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/project_001/1.jpg"></div>
+                            <div class="item"><img src="assets/img/project/project_001/2.jpg"></div>
+                            <div class="item"><img src="assets/img/project/project_001/3.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel001" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel001" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+            
+            <div data-sort="25" class="row w3-container w3-theme project-block portfolio-filter-item all dev_team">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Tour & Event Management System</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Team Lead & Software Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Quaint Park</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Web Portal</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2018</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right"><a target="_blank" href="https://github.com/QuaintPark/TourEventManagementSystem">github.com/QuaintPark/TourEventManagementSystem</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">A very simple event and tour information system. Developed using ASP.NET (Web Form) technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel025" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel025" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel025" data-slide-to="1"></li>
+                            <li data-target="#carousel025" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/025/1.jpg"></div>
+                            <div class="item"><img src="assets/img/project/025/2.jpg"></div>
+                            <div class="item"><img src="assets/img/project/025/3.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel025" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel025" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="24" class="row w3-container w3-theme project-block portfolio-filter-item all dev_team">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Study Abroad Management System</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Team Lead & Software Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Quaint Park</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Web Portal</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2018</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right"><a target="_blank" href="https://github.com/QuaintPark/StudyAbroadManagementSystem">github.com/QuaintPark/StudyAbroadManagementSystem</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">A resource and guideline system about study abroad. A project designed and developed for sharing resources and information about study abroad. Developed using ASP.NET (Web Form) technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel024" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel024" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel024" data-slide-to="1"></li>
+                            <li data-target="#carousel024" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/024/1.jpg"></div>
+                            <div class="item"><img src="assets/img/project/024/2.jpg"></div>
+                            <div class="item"><img src="assets/img/project/024/3.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel024" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel024" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="23" class="row w3-container w3-theme project-block portfolio-filter-item all dev_team">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Daycare Management System</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Team Lead & Software Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Quaint Park</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Web Portal</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2018</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right"><a target="_blank" href="https://github.com/QuaintPark/DaycareManagementSystem">github.com/QuaintPark/DaycareManagementSystem</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">A day care management system with responsive website. Developed using ASP.NET (Web Form) technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel023" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel023" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel023" data-slide-to="1"></li>
+                            <li data-target="#carousel023" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/023/1.jpg"></div>
+                            <div class="item"><img src="assets/img/project/023/2.jpg"></div>
+                            <div class="item"><img src="assets/img/project/023/3.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel023" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel023" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="22" class="row w3-container w3-theme project-block portfolio-filter-item all dev_team dev_company">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Saffron Website & E-Store</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Team Lead & Software Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Saffron Corporation Ltd.</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Web Portal</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2017</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right"><a target="_blank" href="https://www.saffroncorporation.com.bd">www.saffroncorporation.com.bd</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Company official website, e-commerce and custom CMS <i class="fa fa-info-circle" data-toggle="tooltip" title="Content Management System"></i>. Developed using ASP.NET (Web Page) technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel022" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel022" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel022" data-slide-to="1"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/022/1.jpg"></div>
+                            <div class="item"><img src="assets/img/project/022/2.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel022" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel022" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="21" class="row w3-container w3-theme project-block portfolio-filter-item all dev_single">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Songkha Kotha</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Software Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Jeshad Khan</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Desktop Application</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2017</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right"><a target="_blank" href="https://github.com/JeshadKhan/SongkhaKotha">github.com/JeshadKhan/SongkhaKotha</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">A freeware number to text converter desktop application with two different languages & regions. Developed using C#.NET (Windows Form) technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel021" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel021" data-slide-to="0" class="active"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/021/1.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel021" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel021" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="20" class="row w3-container w3-theme project-block portfolio-filter-item all dev_single">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Hook Dictionary</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Software Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Jeshad Khan</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Desktop Application</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2017</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right"><a target="_blank" href="https://github.com/JeshadKhan/HookDictionary">github.com/JeshadKhan/HookDictionary</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">A freeware multi services based dictionary. Developed using C#.NET (Windows Form) technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel020" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel020" data-slide-to="0" class="active"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/020/1.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel020" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel020" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="19" class="row w3-container w3-theme project-block portfolio-filter-item all dev_single">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Simple Institute Management (SIM)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Software Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Jeshad Khan</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Web Portal</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2017</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right">(Live) <a target="_blank" href="http://sim.apphb.com">sim.apphb.com</a><br/>(Source) <a target="_blank" href="https://github.com/JeshadKhan/SIM">github.com/JeshadKhan/SIM</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">An open source institute management system. Developed using ASP.NET MVC5 technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel019" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel019" data-slide-to="0" class="active"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/019/1.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel019" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel019" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="18" class="row w3-container w3-theme project-block portfolio-filter-item all dev_team dev_company">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Pharmacy Council Automation System</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Software Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Pharmacy Council of Bangladesh (PCB)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Web Application</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2017</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right">N/A</div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Workflow automation system with online applications with data management system. Developed using ASP.NET (Web Page) technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel018" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel018" data-slide-to="0" class="active"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/018/1.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel018" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel018" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="17" class="row w3-container w3-theme project-block portfolio-filter-item all dev_team dev_company">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">BPATC Library Management System</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Software Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Bangladesh Public Administration Training Centre (BPATC)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Web Portal</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2017</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right">N/A</div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Library management system. Developed using ASP.NET (Web Page) technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel017" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel017" data-slide-to="0" class="active"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/017/1.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel017" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel017" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="16" class="row w3-container w3-theme project-block portfolio-filter-item all dev_team dev_company">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Overseas Operation Management System</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Software Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Bangladesh Army - Overseas Operation Directorate</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Web Application</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2016</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right">N/A</div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Management system of Overseas Operation and its resources. Developed using ASP.NET (Web Page) technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel016" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel016" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel016" data-slide-to="1"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/016/1.jpg"></div>
+                            <div class="item"><img src="assets/img/project/016/2.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel016" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel016" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="15" class="row w3-container w3-theme project-block portfolio-filter-item all dev_team">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">BlackJack</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Software Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Jeshad Khan & Mitul Islam</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Mobile Game</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2015</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right"><a target="_blank" href="https://github.com/JeshadKhan/BlackJack">github.com/JeshadKhan/BlackJack</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">A freeware mobile based card game. Developed using Unity3D cross platform based tool and C#.NET technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel015" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel015" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel015" data-slide-to="1"></li>
+                            <li data-target="#carousel015" data-slide-to="2"></li>
+                            <li data-target="#carousel015" data-slide-to="3"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/015/1.jpg"></div>
+                            <div class="item"><img src="assets/img/project/015/2.jpg"></div>
+                            <div class="item"><img src="assets/img/project/015/3.jpg"></div>
+                            <div class="item"><img src="assets/img/project/015/4.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel015" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel015" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="14" class="row w3-container w3-theme project-block portfolio-filter-item all dev_team">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">S M Salim Reza (Portfolio)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Web Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">S M Salim Reza (Professor)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Website</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2015</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right"><a target="_blank" href="http://smsalimreza.com/">smsalimreza.com</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Personal portfolio website. Developed using WordPress technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel014" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel014" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel014" data-slide-to="1"></li>
+                            <li data-target="#carousel014" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/014/1.jpg"></div>
+                            <div class="item"><img src="assets/img/project/014/2.jpg"></div>
+                            <div class="item"><img src="assets/img/project/014/3.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel014" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel014" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="13" class="row w3-container w3-theme project-block portfolio-filter-item all training">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Freelancer to Entrepreneur Development Program</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Trainer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">ICT Division (People's Republic of Bangladesh)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Bangladesh Government Project</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2015</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right"><a target="_blank" href="http://freelancertoentrepreneur.com/">www.freelancertoentrepreneur.com</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Training project under ICT Division of People's Republic of Bangladesh. Joined as a Trainer.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel013" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel013" data-slide-to="0" class="active"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/013/1.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel013" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel013" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="12" class="row w3-container w3-theme project-block portfolio-filter-item all dev_team dev_company">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Lalon Academy</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Web Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Lalon Academy (Kushtia)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Website</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2015</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right"><a target="_blank" href="http://lalonacademy.org.bd/">lalonacademy.org.bd</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Official website of the organization. Developed using WordPress technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel012" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel012" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel012" data-slide-to="1"></li>
+                            <li data-target="#carousel012" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/012/1.jpg"></div>
+                            <div class="item"><img src="assets/img/project/012/2.jpg"></div>
+                            <div class="item"><img src="assets/img/project/012/3.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel012" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel012" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="11" class="row w3-container w3-theme project-block portfolio-filter-item all dev_team dev_company">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Bangladesh Student's League (Website)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Web Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Bangladesh Student's League (BSL)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Website</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2015</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right">(Website) <a target="_blank" href="http://bsl.org.bd/">bsl.org.bd</a><br/>(Template) <a target="_blank" href="https://jeshadkhan.github.io/politics">jeshadkhan.github.io/politics</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Official website of the organization. Developed using WordPress technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel011" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel011" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel011" data-slide-to="1"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/011/1.jpg"></div>
+                            <div class="item"><img src="assets/img/project/011/2.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel011" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel011" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="10" class="row w3-container w3-theme project-block portfolio-filter-item all dev_team dev_company">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Mehera Fashion House (Website & E-Commerce)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Web Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Mehera Fashion House</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Website & E-Commerce</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2015</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right"><a target="_blank" href="http://mfhbd.com">mfhbd.com</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Company official website and e-commerce. Developed using WordPress technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel010" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel010" data-slide-to="0" class="active"></li>
+                            <!-- <li data-target="#carousel010" data-slide-to="1"></li> -->
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/010/1.jpg"></div>
+                            <!-- <div class="item"><img src="assets/img/project/010/2.jpg"></div> -->
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel010" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel010" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="9" class="row w3-container w3-theme project-block portfolio-filter-item all dev_single">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Quick Email Sender</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Software Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Jeshad Khan</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Desktop Application</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2014</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right"><a target="_blank" href="https://github.com/JeshadKhan/QuickEmailSender">github.com/JeshadKhan/QuickEmailSender</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Email sending desktop application with attachment. Developed using C#.NET (Windows Form) technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel009" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel009" data-slide-to="0" class="active"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/009/1.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel009" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel009" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="8" class="row w3-container w3-theme project-block portfolio-filter-item all dev_single">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Z M Shamrat (Portfolio)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Web Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Z M Shamrat (Politician)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Website</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2014</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right"><a target="_blank" href="http://zmshamrat.com/">zmshamrat.com</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Personal portfolio website. Developed using responsive frontend (HTML5, CSS3, JavaScript, Bootstrap) technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel008" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel008" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel008" data-slide-to="1"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/008/1.jpg"></div>
+                            <div class="item"><img src="assets/img/project/008/2.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel008" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel008" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="7" class="row w3-container w3-theme project-block portfolio-filter-item all dev_team dev_company">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Vehicle Track (VT)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Jr. Programmer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">LumexTech Solutions Ltd.</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Web Application</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2014</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right">N/A</div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Vehicle tracking system using GPS. Developed using ASP.NET (Web Form) technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel007" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel007" data-slide-to="0" class="active"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/007/1.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel007" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel007" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="6" class="row w3-container w3-theme project-block portfolio-filter-item all dev_team dev_company">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Finance Management (FM)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Jr. Programmer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">LumexTech Solutions Ltd.</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Web Application</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2014</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right">N/A</div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Single entry accounts management system. Developed using ASP.NET (Web Form) technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel006" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel006" data-slide-to="0" class="active"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/006/1.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel006" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel006" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="5" class="row w3-container w3-theme project-block portfolio-filter-item all dev_team dev_company">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Inventory Point of Sale (IPOS)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Jr. Programmer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">LumexTech Solutions Ltd.</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Web Application</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2013</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right"><a target="_blank" href="http://ipos.lumexhost.net">ipos.lumexhost.net</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Inventory and POS management system. Developed using ASP.NET (Web Form) technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel005" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel005" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel005" data-slide-to="1"></li>
+                            <li data-target="#carousel005" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/005/1.jpg"></div>
+                            <div class="item"><img src="assets/img/project/005/2.jpg"></div>
+                            <div class="item"><img src="assets/img/project/005/3.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel005" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel005" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="4" class="row w3-container w3-theme project-block portfolio-filter-item all dev_single">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">NAIP (Neo Artificial Intelligent Pal)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Software Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Jeshad Khan</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Desktop Application</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2013</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right">N/A</div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">A windows based simple pc assistant. Developed using C#.NET (Windows Form) and TTS technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel004" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel004" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel004" data-slide-to="1"></li>
+                            <li data-target="#carousel004" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/004/1.jpg"></div>
+                            <div class="item"><img src="assets/img/project/004/2.jpg"></div>
+                            <div class="item"><img src="assets/img/project/004/3.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel004" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel004" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-sort="3" class="row w3-container w3-theme project-block portfolio-filter-item all dev_single dev_company">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">ATM (Secure Banking)</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Jr. Programmer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">LumexTech Solutions Ltd.</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Desktop Application</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2013</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right">N/A</div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Windows desktop based ATM transactional application. Developed using C#.NET (Windows Form) technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel003" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel003" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel003" data-slide-to="1"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/003/1.jpg"></div>
+                            <div class="item"><img src="assets/img/project/003/2.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel003" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel003" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div data-sort="2" class="row w3-container w3-theme project-block portfolio-filter-item all dev_single dev_company">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">Instant Chat</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Jr. Programmer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">LumexTech Solutions Ltd.</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Desktop Application</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2013</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right">N/A</div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Windows desktop based Chatting application. Developed using C#.NET (Windows Form) and Socket Programming technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel002" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel002" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel002" data-slide-to="1"></li>
+                            <li data-target="#carousel002" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/002/1.jpg"></div>
+                            <div class="item"><img src="assets/img/project/002/2.jpg"></div>
+                            <div class="item"><img src="assets/img/project/002/3.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel002" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel002" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div data-sort="1" class="row w3-container w3-theme project-block portfolio-filter-item all dev_single">
+                <div class="col-md-6 project-content">
+                    <div>
+                        <div class="left"><i class="fa fa-briefcase"></i>Project:</div>
+                        <div class="right">React</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-user"></i>Role:</div>
+                        <div class="right">Software Developer</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-institution"></i>Author:</div>
+                        <div class="right">Jeshad Khan</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-tags"></i>Category:</div>
+                        <div class="right">Desktop Application</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-history"></i>Year:</div>
+                        <div class="right">2013</div>
+                    </div>
+                    <div>
+                        <div class="left"><i class="fa fa-paperclip"></i>Link:</div>
+                        <div class="right"><a target="_blank" href="https://github.com/JeshadKhan/React">github.com/JeshadKhan/React</a></div>
+                    </div>
+                    <hr/>
+                    <div>
+                        <div class="left"><i class="fa fa-newspaper-o"></i>Description:</div>
+                        <div class="right">Physiological question answer application. Developed using C#.NET (Windows Form) technology.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 project-slider">
+                    <div id="carousel001" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel001" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel001" data-slide-to="1"></li>
+                            <li data-target="#carousel001" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active"><img src="assets/img/project/001/1.jpg"></div>
+                            <div class="item"><img src="assets/img/project/001/2.jpg"></div>
+                            <div class="item"><img src="assets/img/project/001/3.jpg"></div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel001" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel001" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </section>
     <!-- end main body -->
 
@@ -107,5 +1531,6 @@
     <a class="to-top"><span class="fa fa-2x fa-arrow-up padding-all-10px animated bounceInUp"></span></a>
     <!-- JavaScript (JS) -->
     <script type="text/javascript" src="assets/js/AppStylePack-JS-Importer.js"></script>
+    <script type="text/javascript" src="assets/js/portfolio.filter.js"></script>
 </body>
 </html>
