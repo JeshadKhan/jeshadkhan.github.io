@@ -12,6 +12,7 @@
 
     <!-- Cascading Style Sheet (CSS) -->
     <link type="text/css" rel="Stylesheet" href="assets/css/AppStylePack-CSS-Importer.css" />
+    <link type="text/css" rel="Stylesheet" href="assets/css/uikit-progress.css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -127,6 +128,57 @@
                 </div>
             </div>
         </div> -->
+
+        <div class="con">
+            <div class="row">
+                <div class="col-md-12">
+                    <section class="uikit-progress-circles-2">
+                        <div class="progress-container">
+                          <!--Circle-->
+                          <div class="progress-card">
+                            <div class="progress-circle">
+                              <div class="progress-content">
+                                <h5 class="progText" data-count="95">0</h5>
+                              </div>
+                              <div class="progress"></div>
+                            </div>
+                            <h5>HTML/CSS</h5>
+                          </div>
+                          <!--Circle-->
+                          <div class="progress-card">
+                            <div class="progress-circle">
+                              <div class="progress-content">
+                                <h5 class="progText" data-count="79">0</h5>
+                              </div>
+                              <div class="progress"></div>
+                            </div>
+                            <h5>JavaScript</h5>
+                          </div>
+                          <!--Circle-->
+                          <div class="progress-card">
+                            <div class="progress-circle">
+                              <div class="progress-content">
+                                <h5 class="progText" data-count="100">0</h5>
+                              </div>
+                              <div class="progress"></div>
+                            </div>
+                            <h5>WordPress</h5>
+                          </div>
+                          <!--Circle-->
+                          <div class="progress-card">
+                            <div class="progress-circle">
+                              <div class="progress-content">
+                                <h5 class="progText" data-count="50">0</h5>
+                              </div>
+                              <div class="progress"></div>
+                            </div>
+                            <h5>React</h5>
+                          </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- end main body -->
 
@@ -139,6 +191,17 @@
     <!-- Go Back To Top Button -->
     <a class="to-top"><span class="fa fa-2x fa-arrow-up padding-all-10px animated bounceInUp"></span></a>
     <!-- JavaScript (JS) -->
-    <script type="text/javascript" src="assets/js/AppStylePack-JS-Importer.js"></script>   
+    <script type="text/javascript" src="assets/js/AppStylePack-JS-Importer.js"></script>
+    <script type="text/javascript" src="assets/js/uikit-progress.js"></script>
+    <script>
+        //Distance From Top When The Nav Menu is Activated, 300 recommended
+        uikitHambNav(300);
+  
+        //Progress Circles Count Speed, 50 recommended
+        uiKitProgressCirclesTwo(50);
+  
+        //Split Screen On Mouse Move
+        uiKitSplitScreen1();
+    </script>
 </body>
 </html>
