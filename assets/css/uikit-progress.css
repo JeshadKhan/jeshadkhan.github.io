@@ -1,6 +1,6 @@
 /* uikit-progress */
 .uikit-progress-circles-2 {
-  padding: 4em;
+  padding: 1em;
 }
 
 .uikit-progress-circles-2 .progress-container {
@@ -18,12 +18,13 @@
 .uikit-progress-circles-2 .progress-card {
   display: inline-block;
   text-align: center;
+  margin: 1em;
 }
 
 .uikit-progress-circles-2 .progress-card h5 {
   color: #2c3e50;
   font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .uikit-progress-circles-2 .progress-circle {
@@ -35,6 +36,7 @@
   border-radius: 100%;
   overflow: hidden;
   margin: 1em;
+  margin: 0 auto;
 }
 
 .uikit-progress-circles-2 .progress-circle .progress {
