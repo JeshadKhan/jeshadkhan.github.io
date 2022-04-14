@@ -19,6 +19,9 @@
 @import url("bootstrap.min.css");
 @import url("bootstrap-theme.min.css");
 
+/* Bootstrap Icons - 1.8.1 */
+@import url("bootstrap-icons.css");
+
 /* Font Awesome - 4.7.0 */
 @import url("font-awesome.min.css");
 

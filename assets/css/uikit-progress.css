@@ -1,7 +1,6 @@
 /* uikit-progress */
 .uikit-progress-circles-2 {
   padding: 4em;
-  background: #161616;
 }
 
 .uikit-progress-circles-2 .progress-container {
@@ -22,7 +21,7 @@
 }
 
 .uikit-progress-circles-2 .progress-card h5 {
-  color: #fff;
+  color: #2c3e50;
   font-weight: 500;
   letter-spacing: 2px;
 }
@@ -30,7 +29,7 @@
 .uikit-progress-circles-2 .progress-circle {
   position: relative;
   background: transparent;
-  border: #494949 8px solid;
+  border: #494949 4px solid;
   width: 8em;
   height: 8em;
   border-radius: 100%;
@@ -43,15 +42,15 @@
   height: 8em;
   position: absolute;
   bottom: -100%;
-  background: #fff;
+  background: #3498db;
 }
 
 .uikit-progress-circles-2 .progress-content {
-  background: #494949;
-  background: -webkit-gradient(linear, left bottom, left top, from(#161616), to(#494949));
-  background: linear-gradient(0deg, #161616 0%, #494949 100%);
-  width: 7.6em;
-  height: 7.6em;
+  background: #34495e;
+  background: -webkit-gradient(linear, left bottom, left top, from(#2c3e50), to(#34495e));
+  background: linear-gradient(0deg, #2c3e50 0%, #34495e 100%);
+  width: 6em;
+  height: 6em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -69,11 +68,16 @@
           justify-content: center;
   color: #fff;
   z-index: 1;
+  opacity: 0.95;
 }
 
 .uikit-progress-circles-2 .progress-content h5 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 500;
+}
+
+.progText {
+  color: #fff !important;
 }
 
 @media screen and (max-width: 1000px) {

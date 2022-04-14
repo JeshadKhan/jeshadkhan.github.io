@@ -36,7 +36,9 @@ function uiKitProgressCirclesTwo(speed) {
 
           //Dynamic Fill Animation depending on percetage
           progress[i].style.bottom = "100%";
-          progress[i].style.bottom = progText[i].dataset.count - 100 + "%";
+          // progress[i].style.bottom = progText[i].dataset.count - 100 + "%";
+          progress[i].style.bottom = progText[i].dataset.count - 122 + "%";
+          progress[i].style.left = "-4%";
 
           //Function for counting up
           function updateCount() {
