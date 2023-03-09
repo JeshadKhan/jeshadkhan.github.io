@@ -822,11 +822,10 @@ var ShareBox = SingleView.extend({
 
     html +='<i class="close-mark"></i>';
     html +='<div class="ui-share-options">';
-    html +='<a title="LinkedIn" class="ui-icon show-hint"><i class="fa fa-linkedin-square"></i></a>';
-    html +='<a title="Facebook" class="ui-icon show-hint"><i class="fa fa-facebook-square"></i></a>';
-    html +='<a title="Twitter" class="ui-icon show-hint"><i class="fa fa-twitter-square"></i></a>';
-    // html +='<a title="Google+" class="ui-icon show-hint"><i class="fa fa-google-plus-square"></i></a>';
-    html +='<a title="Email" class="ui-icon show-hint"><i class="fa fa-envelope"></i></a>';
+    html +='<a title="LinkedIn" class="ui-icon show-hint"><i class="devicon-linkedin-plain"></i></a>';
+    html +='<a title="Facebook" class="ui-icon show-hint"><i class="devicon-facebook-plain"></i></a>';
+    html +='<a title="Twitter" class="ui-icon show-hint"><i class="devicon-twitter-original"></i></a>';
+    html +='<a title="Email" class="ui-icon show-hint"><i class="fa">&#xf0e0;</i></a>';
     html +='</div>';
 
     this.$el.html(html);

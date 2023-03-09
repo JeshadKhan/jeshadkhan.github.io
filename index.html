@@ -1,186 +1,1496 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Personal Portfolio || Jeshad Khan</title>
-
-    <!-- Title Icon -->
-    <link type="image/png" rel="icon" href="assets/img/favicon.png" />
-
-    <!-- Bootstrap -->
-    <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/bootstrap-theme.min.css" />
-    <!-- Font Awesome -->
-    <link type="text/css" rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <!-- Google Fonts -->
-    <link type="text/css" rel="Stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <!-- Pretty Photo Gallery -->
-    <link type="text/css" rel="stylesheet" href="assets/css/prettyPhoto.css" media="screen" />
-    <!-- Bootstrap Image Gallery -->
-    <link type="text/css" rel="Stylesheet" href="assets/css/blueimp-gallery.min.css" />
-    <link type="text/css" rel="Stylesheet" href="assets/css/bootstrap-image-gallery.min.css" />
-    <!-- W3.CSS -->
-    <link type="text/css" rel="Stylesheet" href="assets/css/w3.css" />
-    <!-- W3.CSS Theme -->
-    <link type="text/css" rel="Stylesheet" href="assets/css/W3-theme/w3-theme-blue.css" />
-    <!-- Animate CSS (with CSS3) -->
-    <link type="text/css" rel="stylesheet" href="assets/css/animate.css" />
-    <!-- Hover CSS -->
-    <link type="text/css" rel="Stylesheet" href="assets/css/hover-min.css" />
-    <!-- Ferro Menu -->
-    <link type="text/css" rel="Stylesheet" href="assets/css/jquery.ferro.ferroMenu.css" />
-    <!-- Perspective Navigation -->
-    <link type="text/css" rel="Stylesheet" href="assets/css/perspectiveNavigation.css" />
-    <!-- Notification Style -->
-    <link type="text/css" rel="Stylesheet" href="assets/css/ns-default.css" />
-    <link type="text/css" rel="Stylesheet" href="assets/css/ns-style-bar.css" />
-    <!-- Animated Header Backgrounds -->
-    <link type="text/css" rel="Stylesheet" href="assets/css/animatedHeaderBackgrounds.css" />
-    <!-- AppStylePack (Custom CSS) -->
-    <link type="text/css" rel="Stylesheet" href="assets/css/AppStylePack.css" />
-    <link type="text/css" rel="Stylesheet" href="assets/css/style.css" />
-    <link type="text/css" rel="Stylesheet" href="assets/css/jkThemeReplacer.css" />
-    <!-- Normalized -->
-    <link type="text/css" rel="Stylesheet" href="assets/css/normalize.css" />
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Jeshad Khan</title>
+    <link type="image/png" rel="icon" href="assets/img/favicon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
+    <link rel="stylesheet" href="assets/css/bubble.min.css"/>
+    <link rel="stylesheet" href="assets/css/timeline.min.css"/>
+    <link rel="stylesheet" href="assets/css/turn.min.css"/>
+    <link rel="stylesheet" href="assets/css/styles.min.css"/>
+    <link rel="stylesheet" href="assets/css/loader-hand.min.css"/>
+    <link rel="stylesheet" href="assets/css/loader-ironman.min.css"/>
 </head>
-<body class="body-index">
+<body class="main-content" onload="loadPortfolio('newer'); loadGallary('newer');">
+    <!-- Loader - Hand -->
+    <div class="loading">
+        <div class="finger finger-1">
+          <div class="finger-item">
+            <span></span><i></i>
+          </div>
+        </div>
+        <div class="finger finger-2">
+          <div class="finger-item">
+            <span></span><i></i>
+          </div>
+        </div>
+        <div class="finger finger-3">
+          <div class="finger-item">
+            <span></span><i></i>
+          </div>
+        </div>
+        <div class="finger finger-4">
+          <div class="finger-item">
+            <span></span><i></i>
+          </div>
+        </div>
+        <div class="last-finger">
+          <div class="last-finger-item"><i></i></div>
+        </div>
+    </div>
+    
+    <!-- Loader - IronMan -->
+    <div class='loading-body'>
+        <span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <div class='base'>
+            <span></span>
+            <div class='face'></div>
+        </div>
+    </div>
+    <div class='loading-longfazers'>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <h1 class="loading-title">Loading...</h1>
 
-    <!-- perspective -->
-    <div id="perspective" class="perspective effect-rotatetop">
-        <div class="container-pn">
-            <!-- wrapper (needed for scroll) -->
-            <div class="wrapper-pn">
-                <!-- Animated Header Background -->
-                <div id="large-header-AHB2" class="large-header">
-                                        
-                    <!-- header -->
-                    <header>
-                        <div class="row no-margin">
-                            <div class="col-md-12 width-1by2 title-area text-center">
-                                <div class="rope"></div>
-                                <h1 class="title-site animated swing animatedHover">Md. Naim Hasan Khan Jeshad</h1>
-                            </div>
-                        </div>
-                    </header>
-                    <!-- end header -->
-
-                    <canvas id="demo-canvas"></canvas>
-
-                    <!-- main body -->
-                    <section>
-                        <div>
-                            <ul id="nav-fm">
-                                <li><a href="home.html" title="Home"><i class="fa fa-home"></i></a></li>
-                                <li><a href="about.html" title="Bio"><i class="fa fa-user"></i></a></li>
-                                <li><a href="cv.html" title="CV"><i class="fa fa-book"></i></a></li>
-                                <li><a href="javascript:void(0);" title="Menu" id="showMenu-pn"><i class="fa fa-navicon"></i></a></li>
-                                <li><a href="contact.html" title="Contact"><i class="fa fa-map-marker"></i></a></li>
-                                <li><a href="experience_timeline.html" title="Experience"><i class="fa fa-briefcase"></i></a></li>
-                            </ul>
-                        </div>
-                    </section>
-                    <!-- end main body -->
-
-                    <!-- footer -->
-                    <footer>
-                        <div class="row no-margin navbar-fixed-bottom">
-                            <div class="col-md-12">
-                                <p class="text-center animated bounceInUp">&copy; <span id="current_year">2015</span> <a class="footer-link" href="http://jeshadkhan.com">Jeshad Khan</a>. All Rights Reserved.</p>
-                            </div>
-                        </div>
-                    </footer>
-                    <!-- end footer -->
-
+    <!-- Main Content -->
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="assets/img/hero.png" alt="">
                 </div>
             </div>
-            <!-- end wrapper -->
+            <div class="right-header">
+                <h1 class="name">
+                    Hi <i class="fad fa-hand-wave fa-shake" style="--fa-primary-color: rgb(127, 140, 141); --fa-secondary-color: rgb(127, 140, 141); --fa-animation-duration: 3s;"></i>, I'm <br/>
+                    <span>Md. Naim Hasan Khan Jeshad</span><br/>
+                    <span><small style="opacity:.6;">মোঃ নাঈম হাসান খান জিষাদ</small></span>
+                </h1>
+                <div id="typed-strings">
+                    <span>Team Lead @ DCL</span>
+                    <span>Full Stack Developer</span>
+                    <span>Odoo ERP Expert</span>
+                    <span>Python Developer</span>
+                    <span>Dot.NET Developer</span>
+                    <span>Tech Enthusiast</span>
+                    <span>Entrepreneur</span>
+                </div>
+                <h3 class="type-wrap"><span id="typed" style="white-space:pre;"></span> 🇧🇩</h3>
+                <p class="text-justify">
+                    Passionate and 8+ years experienced software engineer with a demonstrated history of working in the software team of the industry. 
+                    Strong interpersonal skills with an excellent ability to team leading, software development and business development. 
+                    Currently working using the technology of Odoo, Python, Dot.NET in various industry-oriented software with a collaborating team. 
+                    Enthusiastic to build up a challenging and rewarding career in an organization that offers structured career progression with the extent of a competitive, 
+                    dynamic and friendly atmosphere and generates a supportive ground for the functionaries to meet the challenges of the organization with sincerity, 
+                    punctuality, commitment, hard work and self-competency.
+                </p>
+                <div class="btn-con">
+                    <a class="main-btn" target="_blank" href="assets/cv/CV_of_MdNaimHasanKhanJeshad.pdf" download="CV of Md. Naim Hasan Khan Jeshad - jeshadkhan.com">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fad fa-download"></i></span>
+                    </a>
+                    <a class="main-btn" href="mailto:me@jeshadkhan.com">
+                        <span class="btn-text">Contact Me</span>
+                        <span class="btn-icon"><i class="fad fa-at"></i></span>
+                    </a>
+                </div>
+            </div>
         </div>
-        <nav class="outer-nav bottom horizontal pn-out-nav">
-            <a href="home.html"><i class="fa fa-home"></i>Home</a>
-            <a href="about.html"><i class="fa fa-user"></i>Bio</a>
-            <a href="experience_timeline.html"><i class="fa fa-briefcase"></i>Experience</a>
-            <a href="project.html"><i class="fa fa-connectdevelop"></i>Projects</a>
-            <a href="skill.html"><i class="fa fa-pie-chart"></i>Skills</a>
-            <a href="cv.html"><i class="fa fa-book"></i>CV</a>
-            <a href="contact.html"><i class="fa fa-map-marker"></i>Contact</a>
-        </nav>
+        <div class="bubbles-container">
+            <svg class="bubbles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 701 1024" style="overflow: visible;">
+                <g class="bubbles-large" stroke-width="7">
+                    <g>
+                    <g transform="translate(10 940)">
+                        <circle cx="35" cy="35" r="35"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g transform="translate(373 940)">
+                        <circle cx="35" cy="35" r="35"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g transform="translate(408 940)">
+                        <circle cx="35" cy="35" r="35"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g transform="translate(621 940)">
+                        <circle cx="35" cy="35" r="35"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g transform="translate(179 940)">
+                        <circle cx="35" cy="35" r="35"/>
+                    </g>
+                    </g>
+                </g>
+                <g class="bubbles-small" stroke-width="4">
+                    <g>
+                    <g transform="translate(147 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g transform="translate(255 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g transform="translate(573 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g transform="translate(429 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g transform="translate(91 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g transform="translate(640 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g transform="translate(321 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g transform="translate(376 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g transform="translate(376 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                    </g>
+                    <g>
+                    <g transform="translate(497 984)">
+                        <circle cx="15" cy="15" r="15"/>
+                    </g>
+                    </g>
+                </g>
+            </svg>
+          </div>
+    </header>
+    <main>
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information About me</h4>
+                    <p class="text-justify">
+                        <div class="about-profile">
+                            <ul class="admin-profile">
+                                <li><span class="pro-title"><i class="fad fa-user-tie"></i> Name </span> <span class="pro-detail">Md. Naim Hasan Khan Jeshad</span></li>
+                                <li><span class="pro-title"><i class="fad fa-user-secret"></i> Father </span> <span class="pro-detail">Md. Jakir Khan</span></li>
+                                <li><span class="pro-title"><i class="fad fa-person-breastfeeding"></i> Mother </span> <span class="pro-detail">Nazma Khanam</span></li>
+                                <li><span class="pro-title"><i class="fad fa-mosque"></i> Religion </span> <span class="pro-detail">Islam</span></li>
+                                <li><span class="pro-title"><i class="fad fa-cake-candles"></i> Birthday </span> <span class="pro-detail">February, 15</span></li>
+                                <li><span class="pro-title"><i class="fad fa-venus-mars"></i> Gender </span> <span class="pro-detail">Male</span></li>
+                                <li><span class="pro-title"><i class="fad fa-droplet"></i> Blood Group </span> <span class="pro-detail">A+(ve)</span></li>
+                                <li><span class="pro-title"><i class="fad fa-flag"></i> Nationality </span> <span class="pro-detail">Bangladeshi 🇧🇩</span></li>
+                            </ul>
+                        </div>
+                        <h5 class="about-title"><i class="fad fa-heart"></i> to do</h5>
+                        <div class="about-hobby">
+                            <div class="about-hobby-item"><i class="fad fa-2x fa-book-open-cover" style="--fa-primary-color: rgb(26, 188, 156); --fa-secondary-color: rgb(46, 204, 113);"></i></div>
+                            <div class="about-hobby-item"><i class="fad fa-2x fa-headphones" style="--fa-primary-color: rgb(241, 196, 15); --fa-secondary-color: rgb(241, 196, 15);"></i></div>
+                            <div class="about-hobby-item"><i class="fad fa-2x fa-camera-movie" style="--fa-primary-color: rgb(155, 89, 182); --fa-secondary-color: rgb(87, 101, 116);"></i></div>
+                            <div class="about-hobby-item"><i class="fad fa-2x fa-motorcycle" style="--fa-primary-color: rgb(231, 76, 60); --fa-secondary-color: rgb(52, 152, 219);"></i></div>
+                            <div class="about-hobby-item"><i class="fad fa-2x fa-mountain-sun" style="--fa-primary-color: rgb(22, 160, 133); --fa-secondary-color: rgb(243, 156, 18);"></i></div>
+                            <div class="about-hobby-item"><i class="fad fa-2x fa-computer" style="--fa-primary-color: rgb(41, 128, 185); --fa-secondary-color: rgb(72, 219, 251);"></i></div>
+                        </div>
+                        <br/>
+                        <figure class="quote">
+                            <blockquote>
+                                Philosophy is the art of living.
+                            </blockquote>
+                            <figcaption>&mdash; Plutarch, <cite>Greek Philosopher</cite></figcaption>
+                        </figure>
+                    </p>
+                    <div class="btn-con">
+                        <a class="main-btn" target="_blank" href="assets/cv/CV_of_MdNaimHasanKhanJeshad.pdf" download="CV of Md. Naim Hasan Khan Jeshad - jeshadkhan.com">
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fad fa-download"></i></span>
+                        </a>
+                        <a class="main-btn" href="mailto:me@jeshadkhan.com">
+                            <span class="btn-text">Contact Me</span>
+                            <span class="btn-icon"><i class="fad fa-at"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text"><i class="fad fa-2x fa-screwdriver-wrench"></i></p>
+                            <p class="large-text">35+</p>
+                            <p class="small-text">Projects <br /> Completed</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text"><i class="fad fa-2x fa-briefcase"></i></p>
+                            <p class="large-text">8+</p>
+                            <p class="small-text">Years of <br /> experience</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text"><i class="fad fa-2x fa-users"></i></p>
+                            <p class="large-text">20+</p>
+                            <p class="small-text">Happy <br /> Clients</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text"><i class="fad fa-2x fa-comments"></i></p>
+                            <p class="large-text">5+</p>
+                            <p class="small-text">Business <br /> Initiatives</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="stat-title"><i class="fad fa-graduation-cap"></i> Educational</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fad fa-graduation-cap"></i>
+                    </div>
+                    <p class="tl-duration">2022 - Present</p>
+                    <h5>MS in MIS<span> - Daffodil International University, Dhaka.</span></h5>
+                    <p>
+                        Degree Type: <span>Postgraduate.</span>
+                        Program: <span>Master of Science in Management Information Systems (MIS).</span>
+                        Department: <span>Computing and Information System (CIS).</span>
+                        Faculty: <span>Faculty of Science and Information Technology.</span>
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fad fa-graduation-cap"></i>
+                    </div>
+                    <p class="tl-duration">2011 - 2016</p>
+                    <h5>B.Sc. in CSE<span> - Daffodil International University, Dhaka.</span></h5>
+                    <p>
+                        Degree Type: <span>Graduate.</span>
+                        Program: <span>Bachelor of Computer Science and Engineering (CSE).</span>
+                        Department: <span>Computer Science and Engineering (CSE).</span>
+                        Faculty: <span>Faculty of Science and Information Technology.</span>
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fad fa-graduation-cap"></i>
+                    </div>
+                    <p class="tl-duration">2009 - 2011</p>
+                    <h5>Higher Secondary School Certificate (HSC)<span> - BIAM Model School and College, Bogra.</span></h5>
+                    <p>
+                        Group: <span>Science.</span>
+                        Board: <span>Rajshahi Education Board.</span>
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fad fa-graduation-cap"></i>
+                    </div>
+                    <p class="tl-duration">2007 - 2009</p>
+                    <h5>Secondary School Certificate (SSC)<span> - BIAM Model School and College, Bogra.</span></h5>
+                    <p>
+                        Group: <span>Science.</span>
+                        Board: <span>Rajshahi Education Board.</span>
+                    </p>
+                </div>
+            </div>
+            
+            <h4 class="stat-title"><i class="fad fa-language"></i> Language</h4>
+            <div class="about-container about-language">
+                <div class="left-about about-stats">
+                    <!-- (35% Basic, 50% Intermediate, 65% Conversational, 85% Fluent, 100% Native) -->
+                    <div class="progress-bars">
+                        <div class="progress-bar">
+                            <p class="prog-title">Bengali (বাংলা) - Native</p>
+                            <div class="progress-con">
+                                <p class="prog-text">100%</p>
+                                <div class="progress">
+                                    <span style="width: 100%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <p class="prog-title">English - Conversational</p>
+                            <div class="progress-con">
+                                <p class="prog-text">65%</p>
+                                <div class="progress">
+                                    <span style="width: 65%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <p class="prog-title">Hindi - Intermediate</p>
+                            <div class="progress-con">
+                                <p class="prog-text">50%</p>
+                                <div class="progress">
+                                    <span style="width: 50%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <figure class="quote quote-full">
+                        <blockquote>
+                            Everything which has a beginning has a cause.
+                        </blockquote>
+                        <figcaption>&mdash; Al-Ghazali, <cite>Muslim Philosopher from Persia (Laws of Causality)</cite></figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="about-stats">
+                <h4 class="stat-title"><i class="fad fa-people-roof"></i> Management Skill</h4>
+                <!-- (40% Basic, 55% Intermediate, 85% Experienced, 100% Superior -->
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-diagram-project"></i> Project Management</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span style="width: 90%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-calendar-days"></i> Event Management</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span style="width: 85%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-ranking-star"></i> Branding</p>
+                        <div class="progress-con">
+                            <p class="prog-text">55%</p>
+                            <div class="progress">
+                                <span style="width: 55%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-file-contract"></i> Strategic Planning</p>
+                        <div class="progress-con">
+                            <p class="prog-text">40%</p>
+                            <div class="progress">
+                                <span style="width: 40%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-chart-mixed"></i> Business Analysis</p>
+                        <div class="progress-con">
+                            <p class="prog-text">55%</p>
+                            <div class="progress">
+                                <span style="width: 55%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-stats">
+                <h4 class="stat-title"><i class="fad fa-head-side-brain"></i> Interpersonal Skill</h4>
+                <!-- (40% Basic, 55% Intermediate, 85% Experienced, 100% Superior -->
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-screen-users"></i> Teamwork</p>
+                        <div class="progress-con">
+                            <p class="prog-text">100%</p>
+                            <div class="progress">
+                                <span style="width: 100%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-user-group"></i> Mentoring</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span style="width: 85%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-people-group"></i> Leadership</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span style="width: 90%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-bullseye-arrow"></i> Decision Making</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span style="width: 70%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-face-explode"></i> Stress Management</p>
+                        <div class="progress-con">
+                            <p class="prog-text">40%</p>
+                            <div class="progress">
+                                <span style="width: 40%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-brain-circuit"></i> Motivation</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span style="width: 85%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-hand-holding-heart"></i> Responsibility</p>
+                        <div class="progress-con">
+                            <p class="prog-text">60%</p>
+                            <div class="progress">
+                                <span style="width: 60%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-lightbulb-on"></i> Creative Thinking</p>
+                        <div class="progress-con">
+                            <p class="prog-text">65%</p>
+                            <div class="progress">
+                                <span style="width: 65%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-handshake"></i> Communication</p>
+                        <div class="progress-con">
+                            <p class="prog-text">95%</p>
+                            <div class="progress">
+                                <span style="width: 95%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-building-wheat"></i> Organizational Skill</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span style="width: 90%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-stats">
+                <h4 class="stat-title"><i class="fad fa-pen-ruler"></i> Tech Stack</h4>
+                <!-- (25% Beginner, 55% Intermediate, 75% Advanced, 90% Expert/Experienced, 100% Superior) -->
+                
+                <h5 class="about-title-tech-stack mt-0">Core Programming</h5>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-python-plain"></i> Python</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span style="width: 80%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-csharp-plain"></i> C#.NET</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span style="width: 85%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-c-plain"></i> C</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span style="width: 75%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="about-title-tech-stack">Web Programming</h5>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-dot-net-plain"></i> ASP.NET</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span style="width: 80%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-dot-net-plain"></i> ASP.NET MVC</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span style="width: 75%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-dot-net-plain-wordmark"></i> LINQ</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span style="width: 70%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-html5-plain"></i> HTML5 & <i class="devicon-css3-plain"></i> CSS3</p>
+                        <div class="progress-con">
+                            <p class="prog-text">95%</p>
+                            <div class="progress">
+                                <span style="width: 95%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-javascript-plain"></i> JavaScript</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span style="width: 75%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-jquery-plain"></i> jQuery</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span style="width: 70%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-fastapi-plain"></i> Web API</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span style="width: 75%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-x"></i> XML</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span style="width: 90%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="about-title-tech-stack">Reporting</h5>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="far fa-file-lines"></i> SAP Crystal Report</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span style="width: 70%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="far fa-file-lines"></i> RDLC Report</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span style="width: 70%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="far fa-file-lines"></i> HTML Report</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span style="width: 90%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="about-title-tech-stack">Framework</h5>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-bootstrap-plain"></i> Bootstrap</p>
+                        <div class="progress-con">
+                            <p class="prog-text">100%</p>
+                            <div class="progress">
+                                <span style="width: 100%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-django-plain"></i> Django</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span style="width: 70%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-dot-net-plain-wordmark"></i> Entity Framework</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span style="width: 70%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="far fa-file-lines"></i> Kendo UI (Telerik UI)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">60%</p>
+                            <div class="progress">
+                                <span style="width: 60%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="about-title-tech-stack">Database</h5>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-postgresql-plain"></i> PostgreSQL</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span style="width: 85%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-microsoftsqlserver-plain"></i> MSSQL</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span style="width: 85%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-mysql-plain"></i> MySQL</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span style="width: 75%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-mongodb-plain"></i> mongoDB</p>
+                        <div class="progress-con">
+                            <p class="prog-text">45%</p>
+                            <div class="progress">
+                                <span style="width: 45%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="about-title-tech-stack">Enterprise Resource Planning (ERP)</h5>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-o"></i> Odoo ERP (v10, v11, v12, v13, v14, v15, v16)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span style="width: 85%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="about-title-tech-stack">Project Management Tools</h5>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-git-plain"></i> Git</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span style="width: 90%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-trello-plain"></i> Trello</p>
+                        <div class="progress-con">
+                            <p class="prog-text">98%</p>
+                            <div class="progress">
+                                <span style="width: 98%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-julia-plain"></i> Asana</p>
+                        <div class="progress-con">
+                            <p class="prog-text">95%</p>
+                            <div class="progress">
+                                <span style="width: 95%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-slack-plain"></i> Slack</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span style="width: 90%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fas fa-n"></i> Notion</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span style="width: 90%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="about-title-tech-stack">Graphics & Animation</h5>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="devicon-photoshop-plain"></i> Adobe Photoshop</p>
+                        <div class="progress-con">
+                            <p class="prog-text">55%</p>
+                            <div class="progress">
+                                <span style="width: 55%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="about-title-tech-stack">Content Management System (CMS)</h5>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-wordpress"></i> Wordpress</p>
+                        <div class="progress-con">
+                            <p class="prog-text">55%</p>
+                            <div class="progress">
+                                <span style="width: 55%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="about-title-tech-stack">Operating System (OS)</h5>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-windows"></i> Microsoft Windows</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span style="width: 90%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-ubuntu"></i> Ubuntu (Linux Distro)</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span style="width: 85%;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h4 class="stat-title"><i class="fad fa-microchip"></i> Technology</h4>
+            <div class="about-technology">
+                <i class="devicon-vscode-plain" title="VS Code"></i>
+                <i class="fas fa-o" title="Odoo"></i>
+                <i class="devicon-wordpress-plain" title="WordPress"></i>
+                <i class="devicon-github-plain" title="GitHub"></i>
+                <i class="devicon-gitlab-plain" title="GitLab"></i>
+                <i class="devicon-bitbucket-plain" title="Bitbucket"></i>
+                <i class="devicon-visualstudio-plain" title="Visual Studio"></i>
+                <i class="devicon-dot-net-plain-wordmark" title=".NET Framework"></i>
+                <i class="devicon-blender-original" title="Blender"></i>
+                <i class="devicon-selenium-original" title="Selenium"></i>
+                <i class="devicon-digitalocean-plain" title="DigitalOcean"></i>
+                <i class="devicon-azure-plain" title="Microsoft Azure"></i>
+                <i class="devicon-googlecloud-plain" title="Google Cloud Platform"></i>
+                <i class="devicon-nginx-plain" title="Nginx"></i>
+                <i class="devicon-redis-plain" title="Redis"></i>
+                <i class="devicon-docker-plain" title="Docker"></i>
+                <i class="devicon-kubernetes-plain" title="Kubernetes"></i>
+                <i class="devicon-jenkins-plain" title="Jenkins"></i>
+                <i class="devicon-raspberrypi-line" title="Raspberry Pi"></i>
+                <i class="devicon-ssh-plain" title="Secure Shell"></i>
+                <i class="devicon-bash-plain" title="Bash"></i>
+            </div>
+        </section>
+        <section class="container" id="experience">
+            <div class="main-title">
+                <h2>My <span>Experience</span><span class="bg-text">Professional</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <p>
+                        It's the highlight of my professional career. The details emphasize my professional jobs and responsibilities.
+                    </p>
+                </div>
+                <div class="right-about main-btn-group">
+                    <a class="main-btn" target="_blank" href="assets/cv/CV_of_MdNaimHasanKhanJeshad.pdf" download="CV of Md. Naim Hasan Khan Jeshad - jeshadkhan.com">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fad fa-download"></i></span>
+                    </a>
+                    <a class="main-btn" href="mailto:me@jeshadkhan.com">
+                        <span class="btn-text">Contact Me</span>
+                        <span class="btn-icon"><i class="fad fa-at"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="about-stats-icon">
+                <h4 class="stat-title-icon"><i class="fad fa-2x fa-building"></i></h4>
+            </div>
+            <div class="timeline-bar">
+                    
+                <div class="timeline-container timeline-left">
+                    <div class="timeline-content">
+                        <h2><img class="timeline-company-logo" src="assets/img/experience/dcl.png"/>Daffodil Computers Ltd.</h2>
+                        <h5><i class="fad fa-user-tie"></i> Team Lead &amp; Sr. Software Engineer</h5>
+                        <h6><i class="fad fa-clock"></i> October 2019 - Present</h6>
+                        <ul>
+                            <li>Team leading of the Daffodil Smart Solutions team.</li>
+                            <li>Team mentoring and training about the Odoo (ERP) development.</li>
+                            <li>Product development named Smart Edu based on the requirement of Daffodil International University (DIU). 
+                                Cover some modules like managing Student, Teacher, Program, Course, Semester, Academic Curriculum, Syllabus, 
+                                Payment Scheme, Admission, Registration, Hall and more.</li>
+                            <li>Hospitalization solution to Rokeya Hospital (RH).</li>
+                            <li>Customize apps development of the Odoo (ERP).</li>
+                            <li>SaaS (Software as a Service) configuration of the Odoo. Develop some platform with SaaS packages for educational 
+                                institute named Smart Edu, business organization named Business ERP and hospitalization named eCure.</li>
+                            <li>Provide education solution to Daffodil International School (DIS), Daffodil International
+                                College (DIC), Daffodil International University (DIU) and many clients.</li>
+                            <li>Provide business solution to Daffodil Computers Ltd. (DCL), Technokit HealthCare.</li>
+                            <li>Provide hospitalization solution to Daffodil Multidisciplinary Hospital (DMH).</li>
+                            <li>Develop a digital product buying and selling marketplace named Soft-Mart.</li>
+                            <li>Customize apps development of the Odoo (ERP).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-container timeline-right">
+                    <div class="timeline-content">
+                        <h2><img class="timeline-company-logo" src="assets/img/experience/metamorphosis.png"/>Metamorphosis Ltd.</h2>
+                        <h5><i class="fad fa-user-tie"></i> Software Engineer (ERP)</h5>
+                        <h6><i class="fad fa-clock"></i> November 2018 – September 2019</h6>
+                        <ul>
+                            <li>Web e-commerce – BYSL Global Industries.</li>
+                            <li>Customize apps development about the inventory, sales, purchase, accounting & some external API integration in the Odoo (ERP). </li>
+                            <li>Provide solution to Alauddin Textile Mills (ATM), Daffodil Computers Ltd (DCL), eCourier Ltd.</li>
+                            <li>Sales & Contacts offline-online synchronization for Bikrampur Traders.</li>
+                            <li>Configure of IoT POS Box of the Odoo (ERP).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-container timeline-left">
+                    <div class="timeline-content">
+                        <h2><img class="timeline-company-logo" src="assets/img/experience/systechunimax.png"/>Systech Unimax Ltd.</h2>
+                        <h5><i class="fad fa-user-tie"></i> Software Engineer</h5>
+                        <h6><i class="fad fa-clock"></i> March 2018 – October 2018</h6>
+                        <ul>
+                            <li>Develop solution of WE Mobile Supply Chain Management System (WESCM) for the Aamra Holdings Ltd.</li>
+                            <li>Develop solution of MetLife Attendance Management System (MLATMS) for the MetLife Bangladesh – MetLife Alico 
+                                (American Life Insurance Company).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-container timeline-right">
+                    <div class="timeline-content">
+                        <h2><img class="timeline-company-logo" src="assets/img/experience/naafco.png"/>Naafco Group</h2>
+                        <h5><i class="fad fa-user-tie"></i> IT Executive</h5>
+                        <h6><i class="fad fa-clock"></i> January 2018 – March 2018</h6>
+                        <ul>
+                            <li>Develop Random and Unique Serial Generator for product of Naafco Group.</li>
+                            <li>Support and user training of the Adempiere (ERP).</li>
+                            <li>Maintaining IT equipment's and provide IT support inter group.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-container timeline-left">
+                    <div class="timeline-content">
+                        <h2><img class="timeline-company-logo" src="assets/img/experience/saffroncorporation.png"/>Saffron Corporation Ltd.</h2>
+                        <h5><i class="fad fa-user-tie"></i> Software Developer</h5>
+                        <h6><i class="fad fa-clock"></i> December 2016 – January 2018</h6>
+                        <ul>
+                            <li>Develop solution of Overseas Operation Management System for the Bangladesh Army – Overseas Operation Directorate – 
+                                People's Republic of Bangladesh.</li>
+                            <li>Develop Saffron Official Website and Saffron E-Store (Website & E-Commerce).</li>
+                            <li>Develop library Web Portal & Management System solution for the Bangladesh Public Administration Training Centre (BPATC) 
+                                – People's Republic of Bangladesh.</li>
+                            <li>Develop Automation System for the Pharmacy Council of Bangladesh (PCB) – People's Republic of Bangladesh.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-container timeline-right">
+                    <div class="timeline-content">
+                        <h2><img class="timeline-company-logo" src="assets/img/experience/dreaminception.png"/>Dream Inception Ltd.</h2>
+                        <h5><i class="fad fa-user-tie"></i> Software Developer & Consultant</h5>
+                        <h6><i class="fad fa-clock"></i> January 2016 – November 2016</h6>
+                        <ul>
+                            <li>Team managing and mentoring.</li>
+                            <li>Planning & grooming to develop of Smart Medicine-Box (Mobile Apps).</li>
+                            <li>Planning & grooming to develop of Land Office Address (Mobile Apps).</li>
+                            <li>Tech consultation to a US based company named Future Foam.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-container timeline-left">
+                    <div class="timeline-content">
+                        <h2><img class="timeline-company-logo" src="assets/img/experience/giit.png"/>Gurukul Institute of IT (GiiT)</h2>
+                        <h5><i class="fad fa-user-tie"></i> Software Developer</h5>
+                        <h6><i class="fad fa-clock"></i> January 2015 – December 2015</h6>
+                        <ul>
+                            <li>Team managing and mentoring.</li>
+                            <li>Planning & grooming to develop an e-commerce for the Mehera Fashion House.</li>
+                            <li>Planning & grooming & design to develop a web portal for an organization of the Lalon Academy, Kushtia.</li>
+                            <li>Planning & grooming & design to develop a web portal for a political organization of the Bangladesh Student League (BSL).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-container timeline-right">
+                    <div class="timeline-content">
+                        <h2><img class="timeline-company-logo" src="assets/img/experience/lumextech.png"/>LumexTech Solutions Ltd.</h2>
+                        <h5><i class="fad fa-user-tie"></i> Jr. Programmer</h5>
+                        <h6><i class="fad fa-clock"></i> November 2013 – May 2014</h6>
+                        <ul>
+                            <li>Develop a desktop chatting application named Instant Chat.</li>
+                            <li>Develop a desktop application named ATM (Secure Banking).</li>
+                            <li>Develop a web application named Inventory Point of Sale (IPOS).</li>
+                            <li>Develop a web application named Finance Management.</li>
+                            <li>Develop a web application named Vehicle Track.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="about-stats-icon">
+                <h4 class="stat-title-icon"><i class="fad fa-2x fa-circle-dot"></i></h4>
+            </div>
+        </section>
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span><span class="bg-text">Works</span></h2>
+            </div>
+            <p class="port-text">
+                Here is some of my work that I've done in various programming languages.
+            </p>
+            
+            <div class="filter-button-container" style="margin-top: 3rem;">
+                <button type="button" class="filter-button active-item portfolio-default" data-filter="all"><i class="fad fa-circle-check"></i> All</button>
+                <button type="button" class="filter-button" data-filter="dev_single"><i class="fad fa-user"></i> By Self</button>
+                <button type="button" class="filter-button" data-filter="dev_team"><i class="fad fa-users"></i> Team Work</button>
+                <button type="button" class="filter-button" data-filter="dev_company"><i class="fad fa-building"></i> At Company</button>
+                <button type="button" class="filter-button" data-filter="training"><i class="fad fa-presentation-screen"></i> Training</button>
+            </div>
+            <div class="sort-button-container">
+                <button type="button" class="sort-button active-item portfolio-default" title="Sort by: Newer" onclick="loadPortfolio('newer');"><i class="fad fa-arrow-up-z-a"></i></button>
+                <button type="button" class="sort-button" title="Sort by: Older" onclick="loadPortfolio('older');"><i class="fad fa-arrow-down-a-z"></i></button>
+            </div>
+
+            <div class="portfolio-card">
+                
+                <!-- <div data-sort="" class="portfolio-card-item filter ">
+                    <div class="portfolio-card-item-slider">
+                        <div id="slider">
+                            <figure>
+                                <img src="assets/img/project/001/1.jpg" alt=""/>
+                                <img src="assets/img/project/001/2.jpg" alt=""/>
+                                <img src="assets/img/project/001/3.jpg" alt=""/>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="portfolio-card-item-detail">
+                        <div class="about-profile">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fad fa-feather"></i> Title</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fad fa-user-gear"></i> Role</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fad fa-file-certificate"></i> Author</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fad fa-tags"></i> Category</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fad fa-calendar-days"></i> Year</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fad fa-link"></i> Link</td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fad fa-message-lines"></i> Description</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div data-sort="" class="portfolio-card-item filter ">
+                    <div class="portfolio-card-item-slider">
+                        <div id="slider">
+                            <figure>
+                                <img src="assets/img/project/001/1.jpg" alt=""/>
+                                <img src="assets/img/project/001/2.jpg" alt=""/>
+                                <img src="assets/img/project/001/3.jpg" alt=""/>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="portfolio-card-item-detail">
+                        <div class="about-profile">
+                            <ul class="admin-profile">
+                                <li><span class="pro-title"><i class="fad fa-feather"></i> Title </span> <span class="pro-detail"></span></li>
+                                <li><span class="pro-title"><i class="fad fa-user-gear"></i> Role </span> <span class="pro-detail"></span></li>
+                                <li><span class="pro-title"><i class="fad fa-file-certificate"></i> Author </span> <span class="pro-detail"></span></li>
+                                <li><span class="pro-title"><i class="fad fa-tags"></i> Category </span> <span class="pro-detail"></span></li>
+                                <li><span class="pro-title"><i class="fad fa-calendar-days"></i> Year </span> <span class="pro-detail">2023</span></li>
+                                <li><span class="pro-title"><i class="fad fa-link"></i> Link </span> <span class="pro-detail">N/A</span></li>
+                                <li><span class="pro-title"><i class="fad fa-message-lines"></i> Description </span> <span class="pro-detail"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+                
+            </div>
+        </section>
+        <section class="container" id="cv">
+            <div class="main-title">
+                <h2>My <span>Resume</span><span class="bg-text">Bio-Data</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <p>
+                        A professional Resume/CV of mine. That reflects my personal and professional information.
+                    </p>
+                </div>
+                <div class="right-about main-btn-group">
+                    <a class="main-btn" target="_blank" href="assets/cv/CV_of_MdNaimHasanKhanJeshad.pdf" download="CV of Md. Naim Hasan Khan Jeshad - jeshadkhan.com">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fad fa-download"></i></span>
+                    </a>
+                    <a class="main-btn" href="mailto:me@jeshadkhan.com">
+                        <span class="btn-text">Contact Me</span>
+                        <span class="btn-icon"><i class="fad fa-at"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="stat-title"><i class="fad fa-book-open"></i> Live CV</h4>
+                <div class="live-cv catalog-app">
+                    <div id="viewer" style="padding-left: 5rem; padding-right: 5rem;">
+                        <div id="flipbook" class="ui-flipbook">
+                            <div><img class="img-responsive" width="100%" height="auto" src="assets/cv/CV_of_MdNaimHasanKhanJeshad_Page1.jpg" alt=""/></div>
+                            <div><img class="img-responsive" width="100%" height="auto" src="assets/cv/CV_of_MdNaimHasanKhanJeshad_Page2.jpg" alt=""/></div>
+                            <div><img class="img-responsive" width="100%" height="auto" src="assets/cv/CV_of_MdNaimHasanKhanJeshad_Page3.jpg" alt=""/></div>
+                            <div><img class="img-responsive" width="100%" height="auto" src="assets/cv/CV_of_MdNaimHasanKhanJeshad_Page4.jpg" alt=""/></div>
+                            <div><img class="img-responsive" width="100%" height="auto" src="assets/cv/CV_of_MdNaimHasanKhanJeshad_Page5.jpg" alt=""/></div>
+                            <a ignore="1" class="ui-arrow-control ui-arrow-next-page"></a>
+                            <a ignore="1" class="ui-arrow-control ui-arrow-previous-page"></a>
+                        </div>
+                    </div>
+                
+                    <!-- controls -->
+                    <div id="flipbook-controls" class="extend-ui-controls">
+                        <div class="all">
+                            <div class="ui-slider" id="page-slider">
+                                <div class="bar">
+                                    <div class="progress-width">
+                                        <div class="progress">
+                                            <div class="handler"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="ui-options" id="options">
+                                <a class="ui-icon" id="ui-icon-table-contents">
+                                    <i class="fad fa-bars"></i>
+                                </a>
+                                <a class="ui-icon show-hint" title="Share" id="ui-icon-share">
+                                    <i class="fad fa-share"></i>
+                                </a>
+                                <a class="ui-icon show-hint" title="Full Screen" id="ui-icon-full-screen">
+                                    <i class="fad fa-expand"></i>
+                                </a>
+                                <a class="ui-icon show-hint" id="ui-icon-toggle">
+                                    <i class="fad fa-ellipsis-h"></i>
+                                </a>
+                            </div>
+                    
+                            <!-- <div id="zoom-slider-view" class="zoom-slider">
+                                <div class="bg">
+                                    <div class="ui-slider" id="zoom-slider">
+                                        <div class="bar">
+                                            <div class="progress-width">
+                                                <div class="progress">
+                                                    <div class="handler"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        
+                        <div id="ui-icon-expand-options">
+                            <a class="ui-icon show-hint">
+                                <i class="fad fa-ellipsis"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- / controls -->
+                
+                    <!-- miniatures -->
+                    <div id="miniatures" class="ui-miniatures-slider"></div>
+                    <!-- / miniatures -->
+                </div>
+            </div>
+        </section>
+        <section class="container" id="gallary">
+            <div class="main-title">
+                <h2>My <span>Gallary</span><span class="bg-text">Memories</span></h2>
+            </div>
+            <p class="port-text">
+                Important and crucial memories of my career success, conveying competence, credibility and trustworthiness.
+            </p>
+
+            <div class="filter-button-container" style="margin-top: 3rem;">
+                <button type="button" class="filter-button active-item gallary-default" data-filter="all"><i class="fad fa-circle-check"></i> All</button>
+                <button type="button" class="filter-button" data-filter="gallary_project_meeting"><i class="fad fa-handshake"></i> Project Meeting</button>
+                <button type="button" class="filter-button" data-filter="gallary_conference"><i class="fad fa-microphone-stand"></i> Conference</button>
+                <button type="button" class="filter-button" data-filter="gallary_candid"><i class="fad fa-camera"></i> Candid</button>
+            </div>
+            <div class="sort-button-container">
+                <button type="button" class="sort-button active-item gallary-default" title="Sort by: Newer" onclick="loadGallary('newer');"><i class="fad fa-arrow-up-z-a"></i></button>
+                <button type="button" class="sort-button" title="Sort by: Older" onclick="loadGallary('older');"><i class="fad fa-arrow-down-a-z"></i></button>
+            </div>
+
+            <div class="portfolios gallary-card">
+                
+                <!-- <div class="portfolio-item">
+                    <div class="image">
+                        <img src="assets/img/gallary/001.jpg" alt=""/>
+                    </div>
+                    <div class="hover-items">
+                        <h3>Title</h3>
+                        <div class="icons">
+                            <a target="_blank" class="icon" href="#">
+                                <i class="fad fa-link"></i>
+                            </a>
+                            <a target="_blank" class="icon" href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </section>
+        <section class="container" id="blog">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2>My <span>Blog</span><span class="bg-text">Articles</span></h2>
+                </div>
+                <div class="blogs">
+                    <div class="blog">
+                        <img src="assets/img/blog/blog3.jpg" alt=""/>
+                        <div class="blog-text">
+                            <h4>
+                                How to Create Your Own Website
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="assets/img/blog/blog1.jpg" alt=""/>
+                        <div class="blog-text">
+                            <h4>
+                                How to Become an Expert in Web Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="assets/img/blog/blog2.jpg" alt=""/>
+                        <div class="blog-text">
+                            <h4>
+                                Become a Web Designer in 10 Days
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="assets/img/blog/blog1.jpg" alt=""/>
+                        <div class="blog-text">
+                            <h4>
+                                Debbuging made easy with Web Inspector
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="assets/img/blog/blog2.jpg" alt=""/>
+                        <div class="blog-text">
+                            <h4>
+                                Get started with Web Design and UI Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="assets/img/blog/blog3.jpg" alt=""/>
+                        <div class="blog-text">
+                            <h4>
+                                This is what you need to know about Web Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Connect</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Contact me here</h4>
+                        <p>
+                            Contact me about anything professional related to me.
+                            I'll do my best to get back to you as soon as possible.
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fad fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <p>
+                                    : Dhaka, Bangladesh
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fad fa-envelope"></i>
+                                    <span>Email</span>
+                                </div>
+                                <p>
+                                    <span>: <a href="mailto:me@jeshadkhan.com">me@jeshadkhan.com</a></span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fad fa-mobile-notch"></i>
+                                    <span>Mobile</span>
+                                </div>
+                                <p>
+                                    <span>: <a href="tel:+8801722230650">+8801722230650</a></span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fad fa-earth-asia"></i>
+                                    <span>Website</span>
+                                </div>
+                                <p>
+                                    <span>: <a href="https://jeshadkhan.com/">www.jeshadkhan.com</a></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a target="_blank" href="https://www.linkedin.com/in/JeshadKhan">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a target="_blank" href="https://github.com/JeshadKhan">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a target="_blank" href="https://www.facebook.com/this.JeshadKhan">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a target="_blank" href="https://www.instagram.com/JeshadKhan">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a target="_blank" href="https://twitter.com/JeshadKhan">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a target="_blank" href="tel:+8801722230650">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a target="_blank" href="skype:JeshadKhan">
+                                    <i class="fab fa-skype"></i>
+                                </a>
+                                <a target="_blank" href="https://www.youtube.com/JeshadKhan">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <div class="submit-btn contact-download-cv">
+                            <a class="main-btn" target="_blank" href="assets/cv/CV_of_MdNaimHasanKhanJeshad.pdf" download="CV of Md. Naim Hasan Khan Jeshad - jeshadkhan.com">
+                                <span class="btn-text">Download CV</span>
+                                <span class="btn-icon"><i class="fad fa-download"></i></span>
+                            </a>
+                            <a class="main-btn" href="mailto:me@jeshadkhan.com">
+                                <span class="btn-text">Contact Me</span>
+                                <span class="btn-icon"><i class="fad fa-at"></i></span>
+                            </a>
+                        </div>
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741170.263299203!2d90.34435205!3d23.694311749999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2s!4v1425390886644" width="100%" height="300" frameborder="0" style="border: 0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="controls">
+        <div class="control active-btn" data-id="home" title="Home">
+            <i class="fad fa-home"></i>
+        </div>
+        <div class="control" data-id="about" title="About">
+            <i class="fad fa-user"></i>
+        </div>
+        <div class="control" data-id="experience" title="Experience">
+            <i class="fad fa-building"></i>
+        </div>
+        <div class="control" data-id="portfolio" title="Portfolio" onclick="loadPortfolio('newer');">
+            <i class="fad fa-briefcase"></i>
+        </div>
+        <div class="control" data-id="cv" title="Live CV">
+            <i class="fad fa-book"></i>
+        </div>
+        <div class="control" data-id="gallary" title="Gallary" onclick="loadGallary('newer');">
+            <i class="fad fa-image"></i>
+        </div>
+        <!-- <div class="control" data-id="blog" title="Blog">
+            <i class="fad fa-blog"></i>
+        </div> -->
+        <div class="control" data-id="contact" title="Contact">
+            <i class="fad fa-envelope-open"></i>
+        </div>
     </div>
-    <!-- end perspective -->
+    <div class="theme-btn">
+        <i class="fad fa-2x fa-sun theme-light" style="--fa-primary-color: rgb(243, 156, 18); --fa-secondary-color: rgb(241, 196, 15);"></i>
+        <i class="fad fa-2x fa-moon-stars theme-dark hidden" style="--fa-primary-color: rgb(236, 240, 241); --fa-secondary-color: rgb(189, 195, 199);"></i>
+    </div>
 
-    <!-- Go Back To Top Button -->
-    <a class="to-top bg-style-circle"><span class="fa fa-arrow-up padding-all-10px"></span></a>
-    <!-- jQuery -->
-    <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
-    <!-- Modernizr -->
-    <script type="text/javascript" src="assets/js/modernizr.min.js"></script>
-    <!-- Bootstrap -->
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/npm.js"></script>
-    <!-- Classie - 1.0.1 (Class Helper Functions) -->
-    <script type="text/javascript" src="assets/js/classie.js"></script>
-    <!-- Perspective Navigation -->
-    <script type="text/javascript" src="assets/js/perspectiveNavigation-menu.js"></script>
-    <!-- Ferro Menu -->
-    <script type="text/javascript" src="assets/js/jquery.ferro.ferroMenu-1.2.3.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#nav-fm").ferroMenu({
-                position: "center-center",
-                opened: true
-            });
-
-            $('.ferromenu-controller').addClass("animated zoomIn");
-        });
-
-        document.getElementById("current_year").innerHTML = new Date().getFullYear();
-    </script>
-    <!-- Notification Style -->
-    <!-- <script type="text/javascript" src="assets/js/notificationFx.js"></script>
-    <script type="text/javascript">
-        // Script for Message or Notice
-        // create the notification
-        var notification = new NotificationFx({
-            message: '<span class="fa fa-bullhorn"></span><p>If you want to find details, please click on the picture. Then you will have some options.</p>',
-            layout: 'bar',
-            effect: 'slidetop',
-            type: 'notice', // notice, warning, error, success
-            ttl: 7000,
-            // callbacks
-            onClose: function () { return false; },
-            onOpen: function () { return false; }
-        });
-
-        // show the notification
-        notification.show();
-    </script> -->
-    <!-- Animated Header Backgrounds -->
-    <script type="text/javascript" src="assets/js/requestAnimationFrame.js"></script>
-    <script type="text/javascript" src="assets/js/animatedHeaderBackgrounds-demo-2.js"></script>
-    <!-- AppStylePack (Custom JS) -->
-    <script type="text/javascript" src="assets/js/AppStylePack.js"></script>
-    <!-- UpUp - 0.1.1 (for Offline Web. only should use in index.) -->
-    <script type="text/javascript" src="upup.min.js"></script>
-    <script type="text/javascript">
-        UpUp.start({
-            'content-url': 'offline/offline.html',
-            'assets': [
-                'offline/favicon.png',
-                'offline/top.png',
-                'offline/oops.png',
-                'offline/bg.png',
-                'offline/style.css'
-            ]
-        });
-    </script>
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/backbone-min.js"></script>
+    <script src="assets/js/turn.min.js"></script>
+    <script src="assets/js/turn.zoom.min.js"></script>
+    <script src="assets/js/turn.custom.js"></script>
+    <script src="assets/js/typed.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/portfolio.item.min.js"></script>
+    <script src="assets/js/portfolio.min.js"></script>
+    <script src="assets/js/gallary.item.min.js"></script>
+    <script src="assets/js/gallary.min.js"></script>
+    <script src="https://kit-pro.fontawesome.com/releases/v6.2.1/js/pro.min.js" data-auto-fetch-svg></script>
 </body>
 </html>
